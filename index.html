@@ -37,7 +37,7 @@
     <header class="container mx-auto">
         <!-- Navbar -->
         <div>
-            <div class="navbar bg-background rounded-full text-white px-10 py-5 my-12">
+            <div class="navbar bg-background rounded-full text-white px-10 py-5 my-5 md:my-8 lg:my-12">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
@@ -72,8 +72,8 @@
                 <div class="navbar-end">
                     <div class="form-control hidden md:flex lg:flex">
                         <div class="relative flex items-center text-gray-500">
-                            <button class="btn btn-ghost btn-circle absolute right-0">
-                                <i class="fas fa-search"></i>
+                            <button class="btn btn-ghost btn-circle absolute right-0 ">
+                                <i class="fas fa-search fa-lg"></i>
                             </button>
                             <input type="text" placeholder="Search"
                                 class="input input-bordered w-24 md:w-auto rounded-3xl border-none" />
@@ -84,8 +84,42 @@
         </div>
 
     </header>
-    <main>
-
+    <main class="container mx-auto">
+        <!-- Deal of the day section -->
+        <div class="m-5 lg:my-20 flex flex-col lg:flex-row justify-between">
+            <div>
+                <h2 class="text-5xl font-extrabold">Deal of the day</h2>
+                <p class="font-medium py-6 text-[#12121299]">Contrary to popular belief, is not simply random text. It
+                    has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.
+                </p>
+            </div>
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="flex flex-col">
+                    <span class="countdown font-extrabold text-5xl">
+                        <span style="--value:15;"></span>
+                    </span>
+                    days
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown font-extrabold text-5xl">
+                        <span style="--value:10;"></span>
+                    </span>
+                    hours
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown font-extrabold text-5xl">
+                        <span style="--value:24;"></span>
+                    </span>
+                    min
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown font-extrabold text-5xl">
+                        <span style="--value:13;"></span>
+                    </span>
+                    sec
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 
